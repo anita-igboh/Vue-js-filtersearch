@@ -1,0 +1,190 @@
+<template>
+    <div>
+        <input type="text" placeholder="Search here...">
+        <br>
+        <button class="btn">Click</button>
+        <br><br>
+        <p></p>
+        <div class="hero">
+            <div class="images" v-for="(item, index) in images" :key="index">
+                <img :src="item.Url" class="red"/>
+                <br><br>
+                <button class="btn_img" @click="deleted(index)">Del</button>
+            </div> 
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name:'SearchFil',
+    data() {
+        return {
+            images: [
+                 {
+    Name: "John Frusciante",
+    Type: "music",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Reservoir Dogs",
+    Type: "movie",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Foo Fighters",
+    Type: "music",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Pearl Jam",
+    Type: "music",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Sublime",
+    Type: "music",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Inglourious Basterds",
+    Type: "movie",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Incubus",
+    Type: "music",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Audioslave",
+    Type: "music",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Jackie Brown",
+    Type: "movie",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Nirvana",
+    Type: "music",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "The Big Lebowski",
+    Type: "movie",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Goodfellas",
+    Type: "movie",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Guns N' Roses",
+    Type: "music",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Death Proof",
+    Type: "movie",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "The Offspring",
+    Type: "music",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Django Unchained",
+    Type: "movie",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Rage Against The Machine",
+    Type: "music",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Snatch",
+    Type: "movie",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Trainspotting",
+    Type: "movie",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  },
+  {
+    Name: "Weezer",
+    Type: "music",
+    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+  }
+            ]
+        }
+    },
+
+    methods: {
+    deleted(index) {
+        this.images.splice(index, 1)
+    }
+
+}
+
+// computed: {
+//     filteredS: function(){
+//         return this.
+//     }
+// }
+}
+
+
+</script>
+
+<style>
+.hero {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.red {
+    width: 300px;
+    height: 300px;
+}
+.btn_img {
+    padding: 1em;
+    width: 100px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    background: rgb(241, 76, 76);
+    color: white;
+}
+input{
+    width: 300px;
+    border:2px solid #aaa;
+    border-radius: 20px;
+    margin:8px 0;
+    outline: none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:3s;
+    margin-right: 10px;
+
+}
+input:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+.btn{
+    background: black;
+    text-align: center;
+    padding: 5px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+
+}
+
+
+
+</style>
