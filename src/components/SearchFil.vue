@@ -28,47 +28,47 @@ export default {
                  {
                     Name: "John Frusciante",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151340.jpg"
                 },
                 {
                     Name: "Reservoir Dogs",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151350.jpg"
                 },
                 {
                     Name: "Foo Fighters",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151360.jpg"
                 },
                 {
                     Name: "Pearl Jam",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151370.jpg"
                 },
                 {
                     Name: "Sublime",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151380.jpg"
                 },
                 {
                     Name: "Inglourious Basterds",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151390.jpg"
                 },
                 {
                     Name: "Incubus",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151300.jpg"
                 },
                 {
                     Name: "Audioslave",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151257.jpg"
                 },
                 {
                     Name: "Jackie Brown",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151358.jpg"
                 },
                 {
                     Name: "Nirvana",
