@@ -7,6 +7,8 @@
         <p></p>
         <div class="hero">
             <div class="images" v-for="(item, index) in images" :key="index">
+                <h4>{{item.Type}}</h4>
+                <h3>{{item.Name}}</h3>
                 <img :src="item.Url" class="red"/>
                 <br><br>
                 <button class="btn_img" @click="deleted(index)">Del</button>
