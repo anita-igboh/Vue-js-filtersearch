@@ -28,102 +28,102 @@ export default {
                  {
                     Name: "John Frusciante",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151340.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Reservoir Dogs",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151350.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Foo Fighters",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151360.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Pearl Jam",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151370.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Sublime",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151380.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Inglourious Basterds",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151390.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Incubus",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151300.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Audioslave",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151257.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Jackie Brown",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151358.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Nirvana",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/101357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "The Big Lebowski",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/171857.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Goodfellas",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/116147.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Guns N' Roses",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/1421347.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Death Proof",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/153356.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "The Offspring",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151197.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Django Unchained",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151355.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Rage Against The Machine",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151887.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Snatch",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151697.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Trainspotting",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151387.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 },
                 {
                     Name: "Weezer",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151317.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
                 }
             ],
             modelSearch: '',
