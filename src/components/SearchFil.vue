@@ -73,57 +73,57 @@ export default {
                 {
                     Name: "Nirvana",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/101357.jpg"
                 },
                 {
                     Name: "The Big Lebowski",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/171857.jpg"
                 },
                 {
                     Name: "Goodfellas",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/116147.jpg"
                 },
                 {
                     Name: "Guns N' Roses",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/1421347.jpg"
                 },
                 {
                     Name: "Death Proof",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/153356.jpg"
                 },
                 {
                     Name: "The Offspring",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151197.jpg"
                 },
                 {
                     Name: "Django Unchained",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151355.jpg"
                 },
                 {
                     Name: "Rage Against The Machine",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151887.jpg"
                 },
                 {
                     Name: "Snatch",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151697.jpg"
                 },
                 {
                     Name: "Trainspotting",
                     Type: "movie",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151387.jpg"
                 },
                 {
                     Name: "Weezer",
                     Type: "music",
-                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151317.jpg"
                 }
             ],
             modelSearch: '',
