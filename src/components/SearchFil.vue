@@ -1,10 +1,10 @@
 <template>
     <div>
-        <input type="text" placeholder="Search here...">
+        <input type="text" placeholder="Search here..." v-model="modelSearch">
         <br>
-        <button class="btn">Click</button>
+        <button @click="filterMovies" class="btn">Click</button>
         <br><br>
-        <p></p>
+        <p v-for="(item, index) in result" :key="index">{{item.Name}}</p>
         <div class="hero">
             <div class="images" v-for="(item, index) in images" :key="index">
                 <h4>{{item.Type}}</h4>
@@ -24,115 +24,124 @@ export default {
         return {
             images: [
                  {
-    Name: "John Frusciante",
-    Type: "music",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Reservoir Dogs",
-    Type: "movie",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Foo Fighters",
-    Type: "music",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Pearl Jam",
-    Type: "music",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Sublime",
-    Type: "music",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Inglourious Basterds",
-    Type: "movie",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Incubus",
-    Type: "music",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Audioslave",
-    Type: "music",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Jackie Brown",
-    Type: "movie",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Nirvana",
-    Type: "music",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "The Big Lebowski",
-    Type: "movie",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Goodfellas",
-    Type: "movie",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Guns N' Roses",
-    Type: "music",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Death Proof",
-    Type: "movie",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "The Offspring",
-    Type: "music",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Django Unchained",
-    Type: "movie",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Rage Against The Machine",
-    Type: "music",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Snatch",
-    Type: "movie",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Trainspotting",
-    Type: "movie",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  },
-  {
-    Name: "Weezer",
-    Type: "music",
-    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
-  }
-            ]
+                    Name: "John Frusciante",
+                    Type: "music",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Reservoir Dogs",
+                    Type: "movie",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Foo Fighters",
+                    Type: "music",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Pearl Jam",
+                    Type: "music",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Sublime",
+                    Type: "music",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Inglourious Basterds",
+                    Type: "movie",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Incubus",
+                    Type: "music",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Audioslave",
+                    Type: "music",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Jackie Brown",
+                    Type: "movie",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Nirvana",
+                    Type: "music",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "The Big Lebowski",
+                    Type: "movie",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Goodfellas",
+                    Type: "movie",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Guns N' Roses",
+                    Type: "music",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Death Proof",
+                    Type: "movie",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "The Offspring",
+                    Type: "music",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Django Unchained",
+                    Type: "movie",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Rage Against The Machine",
+                    Type: "music",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Snatch",
+                    Type: "movie",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Trainspotting",
+                    Type: "movie",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                },
+                {
+                    Name: "Weezer",
+                    Type: "music",
+                    Url: "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
+                }
+            ],
+            modelSearch: '',
+            result: []
+
         }
     },
-
+    // mounted() {
+    //     console.log("Mary");
+    // },
     methods: {
-    deleted(index) {
-        this.images.splice(index, 1)
+        deleted(index) {
+            this.images.splice(index, 1)
+        },
+        filterMovies() {
+            this.result = this.images.filter(item => { return item.Name === this.modelSearch });
+            
+        }
     }
 
-}
 
 // computed: {
 //     filteredS: function(){
@@ -148,6 +157,8 @@ export default {
 .hero {
     display: grid;
     grid-template-columns: auto auto auto;
+    column-gap:10px;
+    row-gap:10px;
 }
 .red {
     width: 300px;
