@@ -5,14 +5,16 @@
         <button @click="filterMovies" class="btn">Click</button>
         <br><br>
         <p v-for="(item, index) in result" :key="index">{{item.Name}}</p>
+        
         <div class="hero">
-            <div class="images" v-for="(item, index) in images" :key="index">
+            <div class="images" v-for="(item, index) in totalMovies" :key="index">
                 <h4>{{item.Type}}</h4>
                 <h3>{{item.Name}}</h3>
                 <img :src="item.Url" class="red"/>
                 <br><br>
                 <button class="btn_img" @click="deleted(index)">Del</button>
             </div> 
+          
         </div>
     </div>
 </template>
@@ -125,29 +127,29 @@ export default {
                 }
             ],
             modelSearch: '',
-            result: []
+            result: [],
+            searched: false
 
         }
     },
-    // mounted() {
-    //     console.log("Mary");
-    // },
     methods: {
         deleted(index) {
             this.images.splice(index, 1)
         },
         filterMovies() {
-            this.result = this.images.filter(item => { return item.Name === this.modelSearch });
+            this.result = this.images.filter(item => { return item.Name  === this.modelSearch });
+            this.searched = true;
             
         }
+    },
+    computed: {
+        totalMovies() {
+            if (this.searched) {
+                return this.result;
+            } else return this.images
+        }
+    
     }
-
-
-// computed: {
-//     filteredS: function(){
-//         return this.
-//     }
-// }
 }
 
 
